@@ -1,7 +1,13 @@
+@use '../../../../shared/styles/color-pallete.scss' as *;
+:host {
+    width: 100%;
+}
 .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: $white;
+    padding: 1rem;
     .dark-mode {
         display: flex;
         justify-content: center;

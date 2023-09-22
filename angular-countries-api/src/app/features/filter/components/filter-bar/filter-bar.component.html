@@ -1,0 +1,13 @@
+<div class="select-container" [ngClass]="isOpened ? 'active' : ''">
+    <div class="select-button" (click)="isOpened = !isOpened">
+        <div class="text">Filter by Region</div>
+        <img
+            class="icon"
+            src="../../../../../assets/icons/expand.svg"
+            alt="expand"
+        />
+    </div>
+    <div class="options">
+        <div class="option" *ngFor="let region of regions">{{ region }}</div>
+    </div>
+</div>

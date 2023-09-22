@@ -1,0 +1,38 @@
+.select-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 40%;
+    padding: 5px;
+    border-radius: 0.3rem;
+    border: none;
+    .select-button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #fff;
+        box-shadow: 0 1px 1px #0000000a;
+        border-radius: 0.3rem;
+        padding: 0.5rem 1rem;
+        .icon {
+            width: 1.5rem;
+        }
+    }
+    .options {
+        display: none;
+        background: #fff;
+        box-shadow: 0 1px 1px #0000000a;
+        border-radius: 0.3rem;
+        padding: 1rem;
+        .option {
+            border-radius: 0.3rem;
+            padding: 0.5rem;
+        }
+        .option:hover {
+            background: #f2f2f2;
+        }
+    }
+    &.active .options {
+        display: block;
+    }
+}
