@@ -1,9 +1,10 @@
 @use '../../../../shared/styles/color-pallete.scss' as *;
 
 input {
+    font-size: 1rem;
     background: url(../../../../../assets/icons/search.svg) $white no-repeat
-        0.7rem 0.7rem;
-    padding: 1rem 1rem 1rem 4rem;
+        0.4rem 0.4rem;
+    padding: 0.5rem 0.5rem 0.5rem 3rem;
     border: none;
     outline: none;
     width: 100%;
@@ -13,4 +14,5 @@ input {
 /* Clear placeholder text when input is in focus */
 input:focus::placeholder {
     opacity: 0;
+    font-size: 0.5rem sans-serif;
 }

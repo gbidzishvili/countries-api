@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="card" *ngFor="let country of data">
+        <img class="card-flag" src="{{ country.flags.svg }}" />
+        <div class="card-text">
+            <h2 class="title">{{ country.name }}</h2>
+            <div class="small-data">
+                <div class="population">
+                    Population: {{ getPopulation(country.population) }}
+                </div>
+                <div class="region">Region: {{ country.region }}</div>
+                <div class="capital">Capital: {{ country.capital }}</div>
+            </div>
+        </div>
+    </div>
+</div>
